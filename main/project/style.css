@@ -1,0 +1,121 @@
+/* Defining Variables */
+:root {
+  --dark: #040006;
+  --lightblue: #fff;
+  --navlink-color: #11bdc0;
+}
+
+body {
+  
+}
+
+/* The black bar area at top of screen, my name and 4 links */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .8%;
+  background-color: var(--dark);
+  color: var(--lightblue);
+  text-decoration: underline 5px;
+  line-height: 1.3;
+}
+
+/* "Justin Wheeler" */
+h1 {
+  font-size: 200%;
+  /* Justin, it's Justin, see if you can change this color to reference the variable of same color */
+  color: #11bdc0;
+  text-decoration: underline 5px;
+}
+
+/* The class containing and sorounding the banner image */
+.container1 {
+  position: relative;
+  text-align: center;
+  color: #11bdc0;
+}
+
+/* Class to place text on top of banner image */
+.rightmiddle {
+  position:absolute;
+  top: 35%;
+  right: 16px;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+/* Class that contains the subsections (about me/my work/etc) and their paragraphs/content */
+.subsections {
+  display: flex;
+  align-items: center;
+} 
+.test1 {
+display: block;
+align-items: inherit;
+text-align: left;
+
+}
+/* Paragraph Tag */
+p {
+  display: flex;
+  padding-left: 0;
+  margin: 2%;
+  font-size: 150%;
+}
+
+/* Headers like "About me" "My work"... */
+h2 {
+  font-size: 250%;
+  color: #11bdc0;
+  margin: 3%;
+  padding-right: 1%;
+  border-right: 3px solid black;
+}
+
+.contactme {
+}
+
+/* The Unordered list of nav units that links to About Me, My Work, etc */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 350px;
+}
+
+nav a {
+  background-color: unset;
+  color: var(--navlink-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--light);
+}
+
+main {
+  /* display: flex;
+  flex: 1 1 0;
+  max-width: 96%;
+  margin: 2% auto; */
+} 
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  main {
+    max-width: 1200px;
+  }
+}
